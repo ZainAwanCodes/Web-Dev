@@ -1,0 +1,115 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Bebas+Neue&display=swap');
+
+/* ==============================
+   Reset + Base
+============================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(to right, #0f172a, #1e293b); /* dark gradient */
+    color: #f8fafc;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ==============================
+   Navbar
+============================== */
+nav {
+    background-color: #111827; /* deep slate */
+    padding: 15px 40px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+nav a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    padding-bottom: 4px;
+}
+
+nav a:hover {
+    color: #00c3ff;
+    border-bottom: 2px solid #00c3ff;
+}
+
+nav a.active {
+    color: #00c3ff;
+    border-bottom: 2px solid #00c3ff;
+}
+
+/* Mobile responsive navbar */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+}
+
+/* ==============================
+   Main Content
+============================== */
+main {
+    flex: 1; /* push footer down */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+}
+
+h1 {
+    font-family: "Bebas Neue", sans-serif; /* <-- stylistic heading font */
+    font-size: 4rem;
+    font-weight: 400; /* Bebas Neue looks bold naturally */
+    background: linear-gradient(90deg, #60a5fa, #a78bfa); /* blue → violet */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    animation: fadeIn 1.5s ease;
+}
+
+/* ==============================
+   Footer
+============================== */
+footer {
+    background: #111827;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    color: #9ca3af;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+footer a {
+    color: #00c3ff;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* ==============================
+   Animations
+============================== */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}

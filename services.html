@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - Fateh Sons Transport</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Services Cards */
+    .services-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .service-card {
+      background: #1e293b;
+      padding: 25px;
+      border-radius: 12px;
+      width: 220px;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.6);
+    }
+
+    .service-card h3 {
+      font-family: "Bebas Neue", sans-serif;
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+      color: #60a5fa;
+    }
+
+    .service-card p {
+      font-family: "Poppins", sans-serif;
+      font-size: 16px;
+      color: #f8fafc;
+    }
+
+    /* Book Now Button */
+    .book-btn {
+      display: inline-block;
+      margin-top: 40px;
+      padding: 15px 35px;
+      font-size: 18px;
+      font-weight: 600;
+      color: #fff;
+      background: linear-gradient(90deg, #60a5fa, #a78bfa);
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .book-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav>
+    <span><a href="home.html">Home</a></span>
+    <span><a href="contact.html">Contact</a></span>
+    <span><a href="services.html" class="active">Services</a></span>
+    <span><a href="about.html">About</a></span>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <div style="width: 100%; text-align: center;">
+      <!-- Page Heading -->
+      <h1 style="margin-bottom: 40px; font-size: 3.5rem; text-transform: uppercase;">
+        Our Services
+      </h1>
+
+      <!-- Services Cards -->
+      <div class="services-container">
+        <div class="service-card">
+          <h3>Mazdas</h3>
+          <p>Perfect for medium-sized goods, safe and reliable transport.</p>
+        </div>
+        <div class="service-card">
+          <h3>Hyundais</h3>
+          <p>For larger consignments, ensuring timely delivery across Pakistan.</p>
+        </div>
+        <div class="service-card">
+          <h3>Shehzores</h3>
+          <p>Flexible, quick transport for smaller loads or urgent orders.</p>
+        </div>
+        <div class="service-card">
+          <h3>Special Container Service</h3>
+          <p>Securely transport any kind of goods with loading/unloading at your place.</p>
+        </div>
+      </div>
+
+      <!-- Book Now Button -->
+      <a href="contact.html" class="book-btn">Book Now</a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Fateh Sons Goods Transport | All Rights Reserved</p>
+  </footer>
+</body>
+
+</html>
